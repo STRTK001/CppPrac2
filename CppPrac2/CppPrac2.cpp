@@ -2,11 +2,23 @@
 //
 
 #include "CppPrac2.h"
+#include <iostream>
+#include "ApricotPie.h"
+#include "ApplePie.h"
+#include "RaspberryPie.h"
 
-using namespace std;
+
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	ApricotPie ap = ApricotPie();
+	std::cout << ap.description() <<std::endl;
+
+	ApplePie p = ApplePie();
+	std::cout << p.description() << std::endl;
+
+	RaspberryPie rp = RaspberryPie();
+	std::cout << rp.description() << std::endl;
+
 	return 0;
 }
